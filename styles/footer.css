@@ -1,6 +1,7 @@
-
-.footer__top{
- 
+footer .container {
+  flex-direction: column;
+}
+.footer__top {
 }
 
 .footer__poppins-medium {
@@ -13,34 +14,31 @@
   font-size: 16px;
 }
 .footer__middle {
-
 }
 .footer__lists {
 }
 
-.footer__title{
-font-size: 14px;
-color: black;
+.footer__title {
+  font-size: 14px;
+  color: black;
 }
 
-.footer__menu__list{
-      list-style-type: none;
-
+.footer__menu__list {
+  list-style-type: none;
 }
 
 .footer__menu__btn {
-    width: 151px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: #0156FF;
-    font-size: 14px;
-    border-radius: 50px;
+  width: 151px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #0156ff;
+  font-size: 14px;
+  border-radius: 50px;
 }
 
 .footer__bottom {
-   
 }
