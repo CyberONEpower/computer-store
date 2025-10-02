@@ -134,10 +134,24 @@ input[type="email"] {
   justify-content: space-between;
 }
 
+.footer__bottom__socials__list {
+display: flex;
+gap: 13px;
+}
 
 .footer__bottom__logo__list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+
+.footer__bottom__socials__list__item {
+  min-width: 17px;
+  min-height: 17px;
+}
+
+.footer__bottom__logo__list__item {
+  min-width: 34px;
+  min-height: 22px;
 }
 
 .footer__bottom__text {
