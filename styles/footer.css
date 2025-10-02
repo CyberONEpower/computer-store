@@ -1,0 +1,145 @@
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  padding-top: 37px;
+}
+.footer .container {
+  flex-direction: column;
+}
+.footer__top,
+.footer__bottom,
+.footer__middle {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__middle {
+  margin-top: 46px;
+  margin-bottom: 36px;
+}
+
+.footer__bottom {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.footer__poppins-medium {
+  color: #FFFFFF;
+  font-size: 38px;
+}
+
+.footer__poppins-light {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.footer-lists {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__menu__link {
+  text-decoration: none;
+  color: black;
+  font-size: 14;
+}
+
+.footer__title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 100%;
+}
+
+.footer__menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.footer__menu__list a {
+  color: #FFFFFF;
+}
+.footer__menu__list li {
+  padding-top: 7px;
+}
+  
+.footer__menu__btn {
+  width: 151px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #0156ff;
+  font-size: 14px;
+  border-radius: 50px;
+  color: #FFFFFF;
+}
+
+.footer__form {
+  width: 49%;
+  max-width: 560px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+
+.blue__numbers__footer {
+  color: #01A4FF;
+}
+
+input[type="email"] {
+  border: 3px solid #FFFFFF;
+  background-color: black;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 170px;
+  padding-bottom: 15px;
+}
+
+
+.footer__form form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.footer__bottom__logo__list {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__bottom__text {
+  color: #FFFFFF;
+}

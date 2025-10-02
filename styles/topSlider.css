@@ -1,0 +1,79 @@
+.topSlider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topSlider__slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.topSlider__slider .swiper-slide {
+    width: 100%;
+    height: auto;
+}
+.topSlider__slider .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.productSliderControls {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.productSliderControls__btn,
+.productSliderControls__btn {
+    appearance: none;
+    border: none;
+    height: 48px;
+    width: 72px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in;
+}
+
+.productSliderControls__btn--gray {
+    background: rgb(102, 102, 102, .2);
+}
+
+.productSliderControls__btn--black {
+    background-color: #252931;
+}
+
+.productSliderControls__btn svg {
+    width: 8px !important;
+    height: 12px !important;
+}
+
+.productSliderControls__btn svg path {
+    fill: #fff;
+}
+
+.productSliderControls__btn.swiper-button-prev {
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    left: -36px;
+    justify-content: flex-end;
+    padding-right: 16px;
+}
+.productSliderControls__btn.swiper-button-prev:hover {
+    cursor: pointer;
+    left: -30px;
+}
+.productSliderControls__btn.swiper-button-next {
+    border-top-left-radius: 48px;
+    border-bottom-left-radius: 48px;
+    right: -36px;
+    justify-content: flex-start;
+    padding-left: 16px;
+}
+.productSliderControls__btn.swiper-button-next:hover {
+    right: -30px;
+    cursor: pointer;
+}

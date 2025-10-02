@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer__store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="poppins-regular">
+    <header>
+        <div class="header__top">
+            <div class="container d-flex justify-between align-center flex-wrap">
+                <div class="header__top__left">
+                    <select class="header__top__workdays poppins-regular" id="shiftSelector">
+                        <option value="shift1" selected>
+                            Mon-Thu:  <span>9:00 AM - 5:30 PM</span>
+                        <option>
+                        <option value="shift2">
+                           Fri-Sun:  <span>9:00 AM - 3:30 PM</span>
+                        <option>  
+                    </select>
+                </div>
+                <div class="header__top__middle">
+                    <p class="poppins-regular display--desktop">Visit our showroom in <span>1234 Street Adress City Address, 1234</span></p>
+                    <a class="poppins-medium" href="">Contact Us</a>
+                </div>
+                <div class="header__top__right display--desktop">
+                    <p class="poppins-regular">Call Us: <a href="tel:+0012345678">(00) 1234 56 78</a></p>
+                    <div class="header__socials">
+                    <a href="" class="header__socials__item">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.9996 5.39651C6.56601 5.39651 5.39609 6.56644 5.39609 8.00003C5.39609 9.43362 6.56601 10.6035 7.9996 10.6035C9.4332 10.6035 10.6031 9.43362 10.6031 8.00003C10.6031 6.56644 9.4332 5.39651 7.9996 5.39651ZM15.8082 8.00003C15.8082 6.92191 15.818 5.85355 15.7574 4.77737C15.6969 3.52737 15.4117 2.418 14.4977 1.50394C13.5816 0.587922 12.4742 0.304719 11.2242 0.244172C10.1461 0.183625 9.07773 0.193391 8.00156 0.193391C6.92343 0.193391 5.85507 0.183625 4.7789 0.244172C3.5289 0.304719 2.41953 0.589875 1.50546 1.50394C0.589448 2.41995 0.306245 3.52737 0.245698 4.77737C0.185151 5.8555 0.194917 6.92386 0.194917 8.00003C0.194917 9.0762 0.185151 10.1465 0.245698 11.2227C0.306245 12.4727 0.591401 13.5821 1.50546 14.4961C2.42148 15.4121 3.5289 15.6953 4.7789 15.7559C5.85703 15.8164 6.92539 15.8067 8.00156 15.8067C9.07968 15.8067 10.148 15.8164 11.2242 15.7559C12.4742 15.6953 13.5836 15.4102 14.4977 14.4961C15.4137 13.5801 15.6969 12.4727 15.7574 11.2227C15.8199 10.1465 15.8082 9.07815 15.8082 8.00003ZM7.9996 12.0059C5.78281 12.0059 3.99375 10.2168 3.99375 8.00003C3.99375 5.78323 5.78281 3.99417 7.9996 3.99417C10.2164 3.99417 12.0055 5.78323 12.0055 8.00003C12.0055 10.2168 10.2164 12.0059 7.9996 12.0059ZM12.1695 4.76566C11.6519 4.76566 11.234 4.34769 11.234 3.83011C11.234 3.31253 11.6519 2.89456 12.1695 2.89456C12.6871 2.89456 13.1051 3.31253 13.1051 3.83011C13.1052 3.95301 13.0811 4.07473 13.0342 4.18831C12.9872 4.30188 12.9183 4.40508 12.8314 4.49198C12.7445 4.57889 12.6413 4.64779 12.5277 4.69476C12.4142 4.74172 12.2924 4.76581 12.1695 4.76566Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="" class="header__socials__item">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1051 0.276611H0.894231C0.552475 0.276611 0.276367 0.552719 0.276367 0.894475V15.1053C0.276367 15.4471 0.552475 15.7232 0.894231 15.7232H15.1051C15.4468 15.7232 15.723 15.4471 15.723 15.1053V0.894475C15.723 0.552719 15.4468 0.276611 15.1051 0.276611ZM13.321 4.78508H12.0872C11.1199 4.78508 10.9326 5.24462 10.9326 5.92041V7.40907H13.2418L12.9406 9.73957H10.9326V15.7232H8.52484V9.74151H6.51099V7.40907H8.52484V5.69064C8.52484 3.6961 9.74319 2.60905 11.5234 2.60905C12.3768 2.60905 13.1086 2.67276 13.3229 2.70173V4.78508H13.321Z" fill="white"/>
+</svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom display--desktop">
+            <div class="container d-flex align-items-center justify-between">
+                <div class="header__bottom__left">
+                    <a href="/" class="header__logo">
+                        <img src="./assets/icons/logo.svg" alt="лого">
+                    </a>
+                    <nav class="header__menu" role="navigation">
+                        <ul class="header__menu__list">
+                            <li class="header__menu__list__item"><a href="#">Laptops</a></li>
+                            <li class="header__menu__list__item"><a href="#">Desktop PCs</a></li>
+                            <li class="header__menu__list__item"><a href="#">Networking Devices</a></li>
+                            <li class="header__menu__list__item"><a href="#">Printers & Scanners</a></li>
+                            <li class="header__menu__list__item"><a href="#">PC Parts</a></li>
+                            <li class="header__menu__list__item"><a href="#">All Other Products</a></li>
+                            <li class="header__menu__list__item"><a href="#">Repairs</a></li>
+                        </ul>
+                        <a class="header__menu__btn poppins-medium" href="#">Our deals</a>
+                    </nav>
+                </div>
+                <div class="header__bottom__right">
+                    <a class="header__search" href="#">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.29883 0.113159C8.93395 0.0626745 10.5271 0.636438 11.7539 1.71863C12.9808 2.80099 13.7496 4.31046 13.9033 5.93933C14.0542 7.53827 13.5989 9.13297 12.6338 10.4139L15.9678 13.7469C16.0505 13.8297 16.1163 13.9279 16.1611 14.036C16.206 14.1442 16.2295 14.2607 16.2295 14.3778C16.2295 14.4949 16.206 14.6114 16.1611 14.7196C16.1163 14.8277 16.0505 14.9259 15.9678 15.0087C15.885 15.0914 15.7868 15.1572 15.6787 15.202C15.5705 15.2469 15.4541 15.2694 15.3369 15.2694C15.2198 15.2694 15.1033 15.2469 14.9951 15.202C14.887 15.1572 14.7888 15.0914 14.7061 15.0087L11.373 11.6747C10.0923 12.6424 8.49593 13.0991 6.89551 12.9491C5.26544 12.7962 3.75495 12.0275 2.67188 10.7997C1.5888 9.57185 1.01472 7.97713 1.06641 6.3407C1.11822 4.7041 1.79249 3.14806 2.95117 1.99109C4.1088 0.835157 5.66366 0.163758 7.29883 0.113159ZM7.50879 1.91882C6.2821 1.92382 5.10666 2.41275 4.23926 3.28015C3.37188 4.14755 2.88292 5.32302 2.87793 6.54968C2.873 7.77628 3.35263 8.95557 4.21289 9.82996C4.64329 10.2674 5.1562 10.6151 5.72168 10.8534C6.28734 11.0918 6.89496 11.2161 7.50879 11.2186C8.12243 11.2211 8.73042 11.1017 9.29785 10.868C9.86541 10.6343 10.3814 10.2903 10.8154 9.85632C11.2495 9.42228 11.5934 8.90633 11.8271 8.33875C12.0608 7.77131 12.1802 7.16333 12.1777 6.54968C12.1752 5.93585 12.0509 5.32824 11.8125 4.76257C11.5742 4.19707 11.2265 3.68419 10.7891 3.25378C9.91466 2.3935 8.73543 1.91387 7.50879 1.91882Z" fill="black" stroke="black" stroke-width="0.2"/>
+</svg>
+
+                    </a>
+                    <a class="header__cart" href="#">
+                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.5834 16.8334C12.1359 16.8334 12.6658 16.6139 13.0566 16.2232C13.4473 15.8325 13.6667 15.3026 13.6667 14.75C13.6667 14.1975 13.4473 13.6676 13.0566 13.2769C12.6658 12.8862 12.1359 12.6667 11.5834 12.6667C11.0309 12.6667 10.501 12.8862 10.1103 13.2769C9.71957 13.6676 9.50008 14.1975 9.50008 14.75C9.50008 15.3026 9.71957 15.8325 10.1103 16.2232C10.501 16.6139 11.0309 16.8334 11.5834 16.8334ZM4.29174 16.8334C4.84428 16.8334 5.37418 16.6139 5.76488 16.2232C6.15558 15.8325 6.37508 15.3026 6.37508 14.75C6.37508 14.1975 6.15558 13.6676 5.76488 13.2769C5.37418 12.8862 4.84428 12.6667 4.29174 12.6667C3.73921 12.6667 3.20931 12.8862 2.81861 13.2769C2.4279 13.6676 2.20841 14.1975 2.20841 14.75C2.20841 15.3026 2.4279 15.8325 2.81861 16.2232C3.20931 16.6139 3.73921 16.8334 4.29174 16.8334ZM17.873 2.16981C18.133 2.16142 18.3796 2.05223 18.5606 1.86531C18.7416 1.6784 18.8428 1.42842 18.8428 1.16825C18.8428 0.908074 18.7416 0.658098 18.5606 0.471184C18.3796 0.284271 18.133 0.175074 17.873 0.166687H16.674C15.7345 0.166687 14.922 0.81877 14.7178 1.73544L13.4126 7.61252C13.2084 8.52919 12.3959 9.18127 11.4563 9.18127H3.63133L2.12924 3.17085H11.8636C12.1212 3.1591 12.3644 3.0485 12.5425 2.86205C12.7206 2.67561 12.82 2.42767 12.82 2.16981C12.82 1.91195 12.7206 1.66401 12.5425 1.47757C12.3644 1.29113 12.1212 1.18052 11.8636 1.16877H2.12924C1.82473 1.16868 1.5242 1.23802 1.25051 1.37151C0.976816 1.50501 0.737162 1.69915 0.549763 1.93917C0.362364 2.17919 0.232155 2.45878 0.169035 2.75668C0.105913 3.05458 0.111544 3.36295 0.185495 3.65835L1.68758 9.66669C1.79586 10.1002 2.046 10.4851 2.39821 10.7601C2.75042 11.0351 3.18447 11.1845 3.63133 11.1844H11.4563C12.368 11.1845 13.2524 10.8737 13.9636 10.3032C14.6748 9.73281 15.1701 8.93687 15.3678 8.04689L16.674 2.16981H17.873Z" fill="black"/>
+</svg>
+                        <span class="poppins-regular two__circle">2</span>
+                    </a>
+                    <a class="header__profile" href="#">
+                        <img src="./assets/images/photo.png" alt="Фото__Афроамериканца">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom__tablet display--1220 display--tablet display--mobile">
+            <div class="container d-flex justify-between align-center flex-wrap">
+            <a href="/" class="header__bottom__tablet__logo">
+                <img src="./assets/icons/logo-white.svg" alt="">
+            </a>
+            <div class="header__bottom__tablet__items">
+                <div class="header__bottom__tablet__left">
+                <button class="header__bottom__burger">
+                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H21" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+                    <path d="M4 10H21" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+                    <path d="M4 16H21" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <form action="" method="post" id="headerBottomSearch" class="header__bottom__search poppins-regular">
+                    <button type="submit">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.8125 0.90332C8.36302 0.855409 9.87381 1.39954 11.0371 2.42578C12.2004 3.45207 12.9285 4.8833 13.0742 6.42773C13.2171 7.94235 12.7874 9.45302 11.874 10.667L15.0293 13.8213C15.1081 13.9002 15.1712 13.9936 15.2139 14.0967C15.2566 14.1997 15.2783 14.3103 15.2783 14.4219C15.2783 14.5336 15.2566 14.6449 15.2139 14.748C15.1712 14.8511 15.1082 14.9445 15.0293 15.0234C14.9503 15.1024 14.8561 15.1653 14.7529 15.208C14.6499 15.2506 14.5393 15.2725 14.4277 15.2725C14.3162 15.2724 14.2056 15.2507 14.1025 15.208C13.9994 15.1653 13.9051 15.1024 13.8262 15.0234L10.6719 11.8682C9.45808 12.7838 7.94661 13.2163 6.43066 13.0742C4.88502 12.9293 3.45281 12.2003 2.42578 11.0361C1.39874 9.87181 0.854201 8.3594 0.90332 6.80762C0.95245 5.25582 1.59081 3.78062 2.68945 2.68359C3.78713 1.58736 5.26191 0.951302 6.8125 0.90332ZM7.01172 2.62402C5.85098 2.62875 4.73874 3.09231 3.91797 3.91309C3.09746 4.7338 2.63464 5.84534 2.62988 7.00586C2.62516 8.16641 3.07876 9.28199 3.89258 10.1094C4.29993 10.5234 4.78604 10.8526 5.32129 11.0781C5.8565 11.3036 6.43095 11.4215 7.01172 11.4238C7.59246 11.4262 8.16808 11.3139 8.70508 11.0928C9.24215 10.8716 9.72992 10.5455 10.1406 10.1348C10.5513 9.72408 10.8765 9.23624 11.0977 8.69922C11.3188 8.16216 11.4321 7.58667 11.4297 7.00586C11.4273 6.42508 11.3095 5.85064 11.084 5.31543C10.8585 4.78022 10.5292 4.29503 10.1152 3.8877C9.28783 3.07366 8.17241 2.61933 7.01172 2.62402Z" fill="#CACDD8" stroke="#CACDD8" stroke-width="0.2"/>
+                        </svg>
+                    </button>
+                    <input type="text" name="" id="search" placeholder="Search">
+                </form>
+                </div>
+                <div class="header__bottom__tablet__right">
+                    <a href="" class="header__bottom__cart">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.8772 18.2138C13.4787 18.2138 14.0556 17.9748 14.481 17.5494C14.9064 17.1241 15.1453 16.5472 15.1453 15.9456C15.1453 15.3441 14.9064 14.7672 14.481 14.3418C14.0556 13.9164 13.4787 13.6775 12.8772 13.6775C12.2756 13.6775 11.6987 13.9164 11.2734 14.3418C10.848 14.7672 10.609 15.3441 10.609 15.9456C10.609 16.5472 10.848 17.1241 11.2734 17.5494C11.6987 17.9748 12.2756 18.2138 12.8772 18.2138ZM4.93867 18.2138C5.54022 18.2138 6.11713 17.9748 6.54249 17.5494C6.96785 17.1241 7.20682 16.5472 7.20682 15.9456C7.20682 15.3441 6.96785 14.7672 6.54249 14.3418C6.11713 13.9164 5.54022 13.6775 4.93867 13.6775C4.33712 13.6775 3.76021 13.9164 3.33485 14.3418C2.90949 14.7672 2.67053 15.3441 2.67053 15.9456C2.67053 16.5472 2.90949 17.1241 3.33485 17.5494C3.76021 17.9748 4.33712 18.2138 4.93867 18.2138ZM19.7247 2.24942C20.0078 2.24029 20.2763 2.12141 20.4733 1.91792C20.6704 1.71442 20.7805 1.44227 20.7805 1.15901C20.7805 0.875759 20.6704 0.603607 20.4733 0.400113C20.2763 0.196618 20.0078 0.0777349 19.7247 0.0686035H18.4194C17.3965 0.0686035 16.5119 0.778533 16.2896 1.77652L14.8686 8.17495C14.6463 9.17294 13.7618 9.88287 12.7388 9.88287H4.21967L2.58434 3.33927H13.1822C13.4627 3.32647 13.7274 3.20606 13.9213 3.00307C14.1153 2.80009 14.2235 2.53016 14.2235 2.24942C14.2235 1.96869 14.1153 1.69876 13.9213 1.49577C13.7274 1.29279 13.4627 1.17238 13.1822 1.15958H2.58434C2.25281 1.15948 1.92562 1.23497 1.62765 1.38031C1.32968 1.52565 1.06876 1.73701 0.864742 1.99832C0.660719 2.25964 0.518959 2.56403 0.450239 2.88836C0.381519 3.21268 0.38765 3.54841 0.468161 3.87001L2.10349 10.4113C2.22138 10.8833 2.49371 11.3024 2.87717 11.6018C3.26062 11.9012 3.73317 12.0638 4.21967 12.0637H12.7388C13.7314 12.0638 14.6943 11.7254 15.4685 11.1044C16.2428 10.4833 16.782 9.61679 16.9973 8.64786L18.4194 2.24942H19.7247Z" fill="white"/>
+</svg>
+
+                    </a>
+                    <a href="" class="header__bottom__profile">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="16" cy="16" r="15" stroke="white" stroke-width="2"/>
+<path d="M16 10C16.7956 10 17.5587 10.3161 18.1213 10.8787C18.6839 11.4413 19 12.2044 19 13C19 13.7956 18.6839 14.5587 18.1213 15.1213C17.5587 15.6839 16.7956 16 16 16C15.2044 16 14.4413 15.6839 13.8787 15.1213C13.3161 14.5587 13 13.7956 13 13C13 12.2044 13.3161 11.4413 13.8787 10.8787C14.4413 10.3161 15.2044 10 16 10ZM16 17.5C19.315 17.5 22 18.8425 22 20.5V22H10V20.5C10 18.8425 12.685 17.5 16 17.5Z" fill="white"/>
+</svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="topSlider">
+            <div class="container d-flex align-items-center justify-content-start">
+                <!-- Slider main container -->
+                <div class="swiper topSlider__slider">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./assets/images/slide_top.png" alt="первая__картинка"></div>
+                        <div class="swiper-slide"><img src="./assets/images/slide_top.png" alt="вторая__картинка"></div>
+                        <div class="swiper-slide"><img src="./assets/images/slide_top.png" alt="третья__картинка"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="productSliderControls">
+                        <button class="productSliderControls__btn productSliderControls__btn--black swiper-button-prev"></button>
+                        <button class="productSliderControls__btn productSliderControls__btn--black swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="newProducts">
+        <div class="container">
+            <h2 class="newProducts__title">New Products</h2>
+            <div class="swiper"> 
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide productCard">
+                        <p class="productCard__badge poppins-regular productCard__badge--instock">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="none"><circle cx="5.5" cy="5" r="5" fill="#78A962"/><path stroke="#fff" stroke-linecap="round" d="M7.5 4 4.984 7 3.5 5.279"/></svg>
+                            In stock 
+                        </p>
+                        <img class="productCard__image" src="./assets/images/msi_pro_16.png" alt="msi_pro_16">
+                        <div class="productCard__info">
+                            <div class="productCard__rating">
+                                <div class="productCard__rating__stars">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_empty.svg" alt="не__заполненная__звезда">
+                                </div>
+                                <p class="productCard__reviews poppins-regular">Reviews (<span class="newProducts__card__reviewsCount">4</span>)</p>
+                            </div>
+                            <div class="productCard__text poppins-regular">
+                                <p>
+                                    EX DISPLAY : 
+                                    MSI Pro 16
+                                    Flex-036AU 15.6 MULTITOUCH
+                                    All-In-On...
+                                </p>
+                            </div>
+                            <div class="productCard__price">
+                                <del class="poppins-regular">$499</del> 
+                                <p class="poppins-semibold">$499</p>                         
+                            </div>
+                        </div>
+                    </div>
+                      <div class="swiper-slide productCard">
+                        <p class="productCard__badge poppins-regular productCard__badge--check availability">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="none">
+                        <circle cx="5.5" cy="5" r="5" fill="#C94D3F"/>
+                        <path fill="#fff" d="m6.177 5.856.35-.35a.342.342 0 0 1 .365-.075l.427.17a.34.34 0 0 1 .212.313v.781a.34.34 0 0 1-.356.336C4.186 6.845 3.583 4.314 3.47 3.345a.339.339 0 0 1 .339-.376h.755a.338.338 0 0 1 .312.212l.17.427a.338.338 0 0 1-.073.365l-.35.35s.202 1.365 1.555 1.533Z"/></svg>
+                                                    check availability 
+                        </p>
+                        <img class="productCard__image" src="./assets/images/block.png" alt="msi_pro_16">
+                        <div class="productCard__info">
+                            <div class="productCard__rating">
+                                <div class="productCard__rating__stars">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_empty.svg" alt="не__заполненная__звезда">
+                                </div>
+                                <p class="productCard__reviews poppins-regular">Reviews (<span class="newProducts__card__reviewsCount">4</span>)</p>
+                            </div>
+                            <div class="productCard__text poppins-regular">
+                                <p>
+                                    EX DISPLAY : 
+                                    MSI Pro 16
+                                    Flex-036AU 15.6 MULTITOUCH
+                                    All-In-On...
+                                </p>
+                            </div>
+                            <div class="productCard__price">
+                                <del class="poppins-regular">$499</del> 
+                                <p class="poppins-semibold">$499</p>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__content">
+                <svg width="77" height="27" viewBox="0 0 77 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.2846 10.1111L21.1213 15.5228H5.85683C4.43303 15.5209 3.05772 16.0276 1.99023 16.9472L9.68903 10.1856L9.80715 10.0834L19.4527 1.60541C21.008 0.239823 23.1915 -0.212134 25.1807 0.419786C27.17 1.05171 28.6627 2.6715 29.0967 4.669C29.5306 6.66651 28.8398 8.73825 27.2846 10.1038V10.1111Z" fill="#F15B41"/>
+                <path d="M5.85671 11.5798C9.09128 11.5798 11.7134 9.02039 11.7134 5.86314C11.7134 2.70589 9.09128 0.146437 5.85671 0.146437C2.62214 0.146437 0 2.70589 0 5.86314C0 9.02039 2.62214 11.5798 5.85671 11.5798Z" fill="#F99D1D"/>
+                <path d="M5.85698 15.5228C4.43317 15.5209 3.05787 16.0276 1.99038 16.9472L1.94104 16.991C-0.463624 19.102 -0.659766 22.7161 1.50295 25.0633C3.66566 27.4105 7.36825 27.6019 9.77291 25.4909L21.123 15.5243L5.85698 15.5228Z" fill="#272560"/>
+                <path d="M21.1128 15.5272L9.76153 25.4938C8.68669 26.4373 7.29118 26.9574 5.8457 26.9534L23.3585 26.9533C26.7365 26.9006 29.1215 24.42 29.1215 21.2373C29.1215 18.0547 26.5561 15.5712 23.3585 15.5214L21.1128 15.5272Z" fill="#00B6BD"/>
+                <path d="M37.612 22.1742C37.1244 22.1918 36.6527 22.0041 36.3175 21.6591C35.9894 21.3108 35.8145 20.8513 35.8301 20.3791C35.8255 19.9035 35.9463 19.4347 36.181 19.0174C36.3873 18.6444 36.6391 18.2969 36.931 17.9827L44.1773 10.0111H37.861C37.249 10.0111 36.811 9.80679 36.571 9.40106C36.3374 8.99347 36.2208 8.53219 36.2335 8.06565C36.2167 7.61601 36.3498 7.17314 36.613 6.80322C36.8739 6.45314 37.2986 6.25452 37.7425 6.27489H48.9021C49.3739 6.25374 49.8341 6.42145 50.1755 6.739C50.492 7.04695 50.6525 7.48479 50.6525 8.03938C50.6659 8.47125 50.5733 8.9 50.3825 9.29014C50.1994 9.63005 49.9699 9.94426 49.7001 10.2242L42.1538 18.4366H49.3041C49.7342 18.4262 50.1437 18.6159 50.4065 18.9474C50.6866 19.318 50.8279 19.7707 50.807 20.2302C50.8274 20.709 50.7095 21.1838 50.4665 21.6007C50.222 21.9816 49.7886 22.1757 49.1796 22.1757L37.612 22.1742Z" fill="#272560"/>
+                <path d="M55.1423 22.3844C53.1563 22.3844 52.7424 21.392 52.7424 20.5601V8.41738C52.7424 7.78252 52.9389 7.26879 53.3288 6.89079C53.7188 6.51279 54.3398 6.32014 55.1768 6.32014C55.8817 6.32014 56.4397 6.4763 56.8372 6.78571C57.2347 7.09511 57.4552 7.59425 57.4552 8.23641V20.4959C57.4552 21.1628 57.2392 21.6532 56.8132 21.9553C56.3872 22.2574 55.8397 22.3844 55.1423 22.3844ZM55.1423 5.01684C54.3683 5.01684 53.7338 4.79646 53.2538 4.36154C52.7739 3.92663 52.5234 3.32679 52.5234 2.58976C52.5049 1.93636 52.7688 1.30535 53.2508 0.850085C53.7263 0.396193 54.3638 0.164139 55.1423 0.164139C55.7842 0.165501 56.4082 0.370449 56.9197 0.747923C57.4777 1.14781 57.7612 1.76954 57.7612 2.5956C57.7612 3.33262 57.5152 3.92954 57.0307 4.36884C56.5462 4.80814 55.9117 5.02122 55.1423 5.02122V5.01684Z" fill="#272560"/>
+                <path d="M62.6326 27.0374C60.7757 27.0374 60.3827 26.0289 60.3827 25.1824V8.00583C60.3666 7.46783 60.5794 6.94722 60.9707 6.56679C61.3591 6.18879 61.9816 5.99614 62.8186 5.99614C63.3392 5.99099 63.8535 6.10709 64.3185 6.33473C64.812 6.58138 65.0685 7.06447 65.0685 7.75772C65.1685 7.64583 65.276 7.53102 65.391 7.41329C65.7062 7.10192 66.0587 6.8285 66.441 6.5989C67.37 6.03469 68.4463 5.74284 69.5413 5.75824C70.5907 5.7384 71.6302 5.9573 72.5772 6.39749C73.4439 6.81376 74.1985 7.42152 74.7807 8.17221C75.3874 8.97514 75.8303 9.88375 76.0856 10.8489C76.3776 11.9395 76.5208 13.0627 76.5116 14.1896C76.5223 15.3376 76.3575 16.4807 76.0226 17.5814C75.7267 18.5592 75.2409 19.4728 74.5917 20.2727C73.9661 21.0264 73.1733 21.6327 72.2727 22.046C71.2929 22.4832 70.2247 22.7011 69.1469 22.6838C68.4251 22.7039 67.7049 22.6053 67.0169 22.3919C66.5228 22.2289 66.0532 22.0026 65.6205 21.7191C65.3859 21.5641 65.1696 21.3845 64.9755 21.1834V25.0948C64.9755 25.7749 64.785 26.277 64.4085 26.5864C64.032 26.8958 63.4531 27.0374 62.6326 27.0374ZM68.3414 9.6492C67.8303 9.63717 67.3246 9.75327 66.8729 9.98634C66.4479 10.2208 66.0836 10.5468 65.808 10.9394C65.4983 11.3835 65.2723 11.8777 65.1405 12.3989C64.9853 13.0045 64.9092 13.6268 64.914 14.2509C64.914 15.6725 65.214 16.8123 65.814 17.6398C66.414 18.4673 67.2284 18.8541 68.3474 18.8541C69.4663 18.8541 70.2808 18.4396 70.8463 17.5858C71.4118 16.732 71.7133 15.5951 71.7133 14.2509C71.7151 13.6284 71.6365 13.0081 71.4793 12.4047C71.3475 11.8858 71.1264 11.3923 70.8253 10.9452C70.5575 10.5521 70.1977 10.2265 69.7753 9.9951C69.3358 9.76181 68.842 9.64268 68.3414 9.6492Z" fill="#272560"/>
+                </svg>
+                <p class="poppins-regular"><span class="poppins-semibold">own</span> it now, up to 6 months interest free <a href="#">learn more</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="catalogSection">
+        <div class="container">
+            <div class="catalog">
+                <div class="catalog__category">
+                    <img src="./assets/images/customBuildsCover.jpg" class="catalog__category__cover" alt="" />
+                    <h2 class="catalog__category__title poppins-bold">Custom Builds</h2>
+                    <a class="catalog__category__link poppins-regular" href="">See all products</a></div>
+                </div>
+                <div class="catalog__products">
+                    <div class="productCard">
+                        <p class="productCard__badge poppins-regular productCard__badge--instock">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                           width="11" height="10" fill="none"><circle cx="5.5" cy="5" r="5" fill="#78A962"/>
+                           <path stroke="#fff" stroke-linecap="round" d="M7.5 4 4.984 7 3.5 5.279"/></svg>
+                            In stock 
+                        </p>
+                        <img class="productCard__image" src="./assets/images/msi_pro_16.png" alt="msi_pro_16">
+                        <div class="productCard__info">
+                            <div class="productCard__rating">
+                                <div class="productCard__rating__stars">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_empty.svg" alt="не__заполненная__звезда">
+                                </div>
+                                <p class="productCard__reviews poppins-regular">Reviews (<span class="newProducts__card__reviewsCount">4</span>)</p>
+                            </div>
+                            <div class="productCard__text poppins-regular">
+                                <p>
+                                    EX DISPLAY : 
+                                    MSI Pro 16
+                                    Flex-036AU 15.6 MULTITOUCH
+                                    All-In-On...
+                                </p>
+                            </div>
+                            <div class="productCard__price">
+                                <del class="poppins-regular">$499</del> 
+                                <p class="poppins-semibold">$499</p>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productCard">
+                        <p class="productCard__badge poppins-regular productCard__badge--instock">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="none"><circle cx="5.5" cy="5" r="5" fill="#78A962"/><path stroke="#fff" stroke-linecap="round" d="M7.5 4 4.984 7 3.5 5.279"/></svg>
+                            In stock 
+                        </p>
+                        <img class="productCard__image" src="./assets/images/msi_pro_16.png" alt="msi_pro_16">
+                        <div class="productCard__info">
+                            <div class="productCard__rating">
+                                <div class="productCard__rating__stars">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_empty.svg" alt="не__заполненная__звезда">
+                                </div>
+                                <p class="productCard__reviews poppins-regular">Reviews (<span class="newProducts__card__reviewsCount">4</span>)</p>
+                            </div>
+                            <div class="productCard__text poppins-regular">
+                                <p>
+                                    EX DISPLAY : 
+                                    MSI Pro 16
+                                    Flex-036AU 15.6 MULTITOUCH
+                                    All-In-On...
+                                </p>
+                            </div>
+                            <div class="productCard__price">
+                                <del class="poppins-regular">$499</del> 
+                                <p class="poppins-semibold">$499</p>                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productCard">
+                        <p class="productCard__badge poppins-regular productCard__badge--instock">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="none"><circle cx="5.5" cy="5" r="5" fill="#78A962"/><path stroke="#fff" stroke-linecap="round" d="M7.5 4 4.984 7 3.5 5.279"/></svg>
+                            In stock 
+                        </p>
+                        <img class="productCard__image" src="./assets/images/msi_pro_16.png" alt="msi_pro_16">
+                        <div class="productCard__info">
+                            <div class="productCard__rating">
+                                <div class="productCard__rating__stars">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_empty.svg" alt="не__заполненная__звезда">
+                                </div>
+                                <p class="productCard__reviews poppins-regular">Reviews (<span class="newProducts__card__reviewsCount">4</span>)</p>
+                            </div>
+                            <div class="productCard__text poppins-regular">
+                                <p>
+                                    EX DISPLAY : 
+                                    MSI Pro 16
+                                    Flex-036AU 15.6 MULTITOUCH
+                                    All-In-On...
+                                </p>
+                            </div>
+                            <div class="productCard__price">
+                                <del class="poppins-regular">$499</del> 
+                                <p class="poppins-semibold">$499</p>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalogTabsSection">
+        <div class="container">
+            <div class="catalog">
+                <div class="catalog__tabs">
+                    <ul class="catalog__tabs__list">
+                        <li class="poppins-semibold catalog__tabs__list__item catalog__tabs__list__item--active"><a href="">MSI GS Series</a></li>
+                        <li class="poppins-semibold catalog__tabs__list__item"><a href="">MSI GT Series</a></li>
+                        <li class="poppins-semibold catalog__tabs__list__item"><a href="">MSI GT Series</a></li>
+                        <li class="poppins-semibold catalog__tabs__list__item"><a href="">MSI GT Series</a></li>
+                    </ul>
+                </div>
+                <div class="catalog__info">
+                    <div class="catalog__category">
+                        <img src="./assets/images/customBuildsCover.jpg" class="catalog__category__cover" alt="">
+                        <h2 class="catalog__category__title poppins-bold">Custom Builds</h2>
+                        <a class="catalog__category__link poppins-regular" href="">See all products</a></div>
+                    </div>
+                    <div class="catalog__products">
+<div class="productCard">
+                        <p class="productCard__badge poppins-regular productCard__badge--instock">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="none"><circle cx="5.5" cy="5" r="5" fill="#78A962"/><path stroke="#fff" stroke-linecap="round" d="M7.5 4 4.984 7 3.5 5.279"/></svg>
+                            In stock 
+                        </p>
+                        <img class="productCard__image" src="./assets/images/msi_pro_16.png" alt="msi_pro_16">
+                        <div class="productCard__info">
+                            <div class="productCard__rating">
+                                <div class="productCard__rating__stars">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_full.svg" alt="заполненная__звезда">
+                                    <img src="./assets/icons/Star_empty.svg" alt="не__заполненная__звезда">
+                                </div>
+                                <p class="productCard__reviews poppins-regular">Reviews (<span class="newProducts__card__reviewsCount">4</span>)</p>
+                            </div>
+                            <div class="productCard__text poppins-regular">
+                                <p>
+                                    EX DISPLAY : 
+                                    MSI Pro 16
+                                    Flex-036AU 15.6 MULTITOUCH
+                                    All-In-On...
+                                </p>
+                            </div>
+                            <div class="productCard__price">
+                                <del class="poppins-regular">$499</del> 
+                                <p class="poppins-semibold">$499</p>                         
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bannerLogo">
+        <div class="container">
+            <div class="bannerLogo__images">
+                <img src="./assets/images/Rossat.svg" alt=""><img src="./assets/images/Msi.svg" alt=""><img src="./assets/images/Razer.svg" alt=""><img src="./assets/images/Thermaltake.svg" alt=""><img src="./assets/images/Adata.svg" alt=""><img src="./assets/images/Hewlett__Packard.svg" alt=""><img src="./assets/images/Gigabyte.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <h2 class="poppins-semibold news__title">Follow us on Instagram for News, Offers & More</h2>
+            <div class="news__items">
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/images/Hp.png" alt="">
+                    <p class="poppins-regular news__card__text">
+                        If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...
+                    </p>
+                    <time class="poppins-regular">01.09.2020</time>
+                </div>
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/images/Monitor.png" alt="">
+                    <p class="poppins-regular news__card__text">
+As a gamer, superior sound counts for a lot. You need to hear enemies tiptoeing up behind you for a sneak attack or a slight change in the atmospheric music signaling a new challenge or task...                    </p>
+                    <time class="poppins-regular">01.09.2020</time>
+                </div>
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/images/Dual__monitor.png" alt="">
+                    <p class="poppins-regular news__card__text">
+If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...                    </p>
+                    <time class="poppins-regular">01.09.2020</time>
+                </div>
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/images/Tripl__monitor.png" alt="">
+                    <p class="poppins-regular news__card__text">
+                        If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...
+                    </p>
+                    <time class="poppins-regular">01.09.2020</time>
+                </div>
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/images/mouse__hande.png" alt="">
+                    <p class="poppins-regular news__card__text">
+                        If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...
+                    </p>
+                    <time class="poppins-regular">01.09.2020</time>
+                </div>
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/images/Keyboard.png" alt="">
+                    <p class="poppins-regular news__card__text">
+                        If you’ve recently made a desktop PC or laptop purchase, you might want to consider adding peripherals to enhance your home office setup, your gaming rig, or your business workspace...
+                    </p>
+                    <time class="poppins-regular">01.09.2020</time>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <div class="reviewSlider swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide reviewSlider__item">
+                        <div class="review__slide__text">
+                            <p class="poppins-regular">My first order arrived today in perfect condition.
+                            From the time I sent a question about the item to making the purchase, to the shipping and now the delivery, your company, Tecs, has stayed in touch.  Such great service.  I look forward to shopping on your site in the future and would highly recommend it.</p>
+                            <p class="poppins-regular">- Tama Brown</p>
+                        </div>
+                        <button class="review__button">Leave Us A Review</button>
+                    </div>
+                    <div class="swiper-slide reviewSlider__item">
+                        <div class="review__slide__text">
+                            <p class="poppins-regular">My first order arrived today in perfect condition.
+                            From the time I sent a question about the item to making the purchase, to the shipping and now the delivery, your company, Tecs, has stayed in touch.  Such great service.  I look forward to shopping on your site in the future and would highly recommend it.</p>
+                            <p class="poppins-regular">- Tama Brown</p>
+                        </div>
+                        <button class="review__button">Leave Us A Review</button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__item">
+                <div class="advantages__item__icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9121 0.626465C6.10683 0.626465 0.570312 6.16298 0.570312 12.9682V18.0814C0.570312 19.3452 1.67737 20.3733 3.03867 20.3733H4.27284C4.60017 20.3733 4.91409 20.2433 5.14554 20.0118C5.37699 19.7804 5.50702 19.4664 5.50702 19.1391V12.7918C5.50702 12.4644 5.37699 12.1505 5.14554 11.9191C4.91409 11.6876 4.60017 11.5576 4.27284 11.5576H3.15221C3.83841 6.78131 7.94823 3.09482 12.9121 3.09482C17.8759 3.09482 21.9858 6.78131 22.672 11.5576H21.5513C21.224 11.5576 20.9101 11.6876 20.6786 11.9191C20.4472 12.1505 20.3172 12.4644 20.3172 12.7918V20.3733C20.3172 21.7346 19.2101 22.8417 17.8488 22.8417H15.3804V21.6075H10.4437V25.31H17.8488C20.5714 25.31 22.7855 23.0959 22.7855 20.3733C24.1468 20.3733 25.2539 19.3452 25.2539 18.0814V12.9682C25.2539 6.16298 19.7173 0.626465 12.9121 0.626465Z" fill="white"/>
+</svg>
+</div>
+                <h3 class="poppins-bold">Product Support</h3>
+                <p class="poppins-regular">Up to 3 years on-site warranty available for your peace of mind.</p>
+            </div>
+             <div class="advantages__item">
+                <div class="advantages__item__icon"><svg width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.82 24.8824L13 27.7024L10.18 24.8824C4.6375 23.6024 0.5 18.6324 0.5 12.7024C0.5 5.80239 6.1 0.202393 13 0.202393C19.9 0.202393 25.5 5.80239 25.5 12.7024C25.5 18.6324 21.3625 23.6024 15.82 24.8824ZM5.52875 16.9724C7.36375 19.7099 10.1187 21.4524 13.2 21.4524C16.28 21.4524 19.0362 19.7111 20.87 16.9724C18.7897 15.0281 16.0474 13.9484 13.2 13.9524C10.3521 13.9481 7.60939 15.0278 5.52875 16.9724ZM13 11.4524C13.9946 11.4524 14.9484 11.0573 15.6517 10.354C16.3549 9.65078 16.75 8.69695 16.75 7.70239C16.75 6.70783 16.3549 5.754 15.6517 5.05074C14.9484 4.34748 13.9946 3.95239 13 3.95239C12.0054 3.95239 11.0516 4.34748 10.3483 5.05074C9.64509 5.754 9.25 6.70783 9.25 7.70239C9.25 8.69695 9.64509 9.65078 10.3483 10.354C11.0516 11.0573 12.0054 11.4524 13 11.4524Z" fill="white"/>
+</svg>
+
+</div>
+                <h3 class="poppins-bold">Personal Account</h3>
+                <p class="poppins-regular">With big discounts, free delivery and a dedicated support specialist.</p>
+            </div>
+             <div class="advantages__item">
+                <div class="advantages__item__icon"><svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.2047 1.22879C25.1293 1.04096 24.9844 0.889434 24.8001 0.805738C24.6158 0.722043 24.4063 0.712622 24.2152 0.779436C24.0242 0.84625 23.8662 0.984155 23.7742 1.16446C23.6823 1.34477 23.6633 1.55359 23.7214 1.74749C24.9291 5.21849 22.5319 7.81069 20.7041 9.19909L19.9657 8.14089C19.7174 7.78599 19.1623 7.49089 18.7307 7.48569L14.5863 7.50389C14.08 7.51918 13.5873 7.671 13.1602 7.94329L0.948006 16.5064C0.663949 16.7063 0.470671 17.0106 0.410489 17.3527C0.350307 17.6948 0.428126 18.0468 0.626906 18.3316L6.17661 26.272C6.59261 26.8635 7.25691 26.792 7.84971 26.3786L20.0619 17.8142C20.4129 17.5659 20.8185 17.0303 20.9615 16.6208L22.2589 12.5323C22.4019 12.1241 22.3148 11.5014 22.0665 11.1465L21.6167 10.5017C24.0711 8.62059 26.6191 5.29649 25.2047 1.22879ZM19.5224 13.3942C19.2974 13.5517 19.0436 13.6633 18.7755 13.7226C18.5074 13.782 18.2302 13.788 17.9597 13.7401C17.6893 13.6923 17.431 13.5917 17.1994 13.444C16.9679 13.2963 16.7678 13.1045 16.6104 12.8794C16.2918 12.4239 16.1669 11.8607 16.2632 11.3133C16.3595 10.7659 16.669 10.279 17.1239 9.95959C17.4805 9.70975 17.9063 9.57758 18.3416 9.58154C18.777 9.5855 19.2003 9.72541 19.5523 9.98169C19.1987 10.1949 18.9556 10.3197 18.9101 10.3392C18.749 10.416 18.6187 10.5453 18.5406 10.7059C18.4626 10.8665 18.4414 11.0488 18.4805 11.223C18.5196 11.3971 18.6168 11.5529 18.756 11.6646C18.8952 11.7764 19.0683 11.8376 19.2468 11.8381C19.3586 11.8381 19.473 11.8121 19.5809 11.7614C19.8331 11.6418 20.1035 11.5001 20.3856 11.3324C20.4505 11.7225 20.4039 12.123 20.2512 12.4877C20.0985 12.8525 19.8459 13.1667 19.5224 13.3942Z" fill="white"/>
+</svg>
+
+</div>
+                <h3 class="poppins-bold">Amazing Savings</h3>
+                <p class="poppins-regular">Up to 70% off new Products, you can be sure of the best price.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+             <div class="footer__top">
+                <div class="footer__heading">
+                    <h2 class="footer__poppins-medium">Sign Up To Our Newsletter.</h2>
+                    <p class="footer__poppins-light">Be the first to hear about the latest offers.</p>
+                </div>
+                <div class="footer__form">
+                    <form action="#" method="post" id="subscribeForm">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button class="footer__menu__btn poppins-medium" type="submit">Subscribe</button>
+                    </form>
+                </div>   
+            </div>
+            <div class="footer__middle">    
+                <div class="footer-lists">
+                    <div class="footer-list">
+                        <h5 class="footer__title">Information</h5>
+                        <ul class="footer__menu__list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Zip</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Orders and Returns</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Advanced Search</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h5 class="footer__title">PC Parts</h5>
+                        <ul class="footer__menu__list">
+                            <li><a href="#">CPUS</a></li>
+                            <li><a href="#">Add On Cards</a></li>
+                            <li><a href="#">Hard Drives (Internal)</a></li>
+                            <li><a href="#">Graphic Cards</a></li>
+                            <li><a href="#">Keyboards / Mice</a></li>
+                            <li><a href="#">Cases / Power Supplies / Cooling</a></li>
+                            <li><a href="#">RAM (Memory)</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Speakers / Headsets</a></li>
+                            <li><a href="#">Motherboards</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h5 class="footer__title">Desktop PCs</h5>
+                        <ul class="footer__menu__list">
+                            <li><a href="#">Custom PCs</a></li>
+                            <li><a href="#">Servers</a></li>
+                            <li><a href="#">MSI All-In-One PCs</a></li>
+                            <li><a href="#">HP/Compaq PCs</a></li>
+                            <li><a href="#">ASUS PCs</a></li>
+                            <li><a href="#">Tecs PCs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h5 class="footer__title">Laptops</h5>
+                        <ul class="footer__menu__list">
+                            <li><a href="#">Evryday Use Notebooks</a></li>
+                            <li><a href="#">MSI Workstation Series</a></li>
+                            <li><a href="#">MSI Prestige Series</a></li>
+                            <li><a href="#">Tablets and Pads</a></li>
+                            <li><a href="#">Netbooks</a></li>
+                            <li><a href="#">Infinity Gaming Notebooks</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h5 class="footer__title">Address</h5>
+                        <ul class="footer__menu__list">
+                            <li><a href="#">Address: 1234 Street Adress City Address, 1234</a></li>
+                            <li><a href="#">Phones: <span class="blue__numbers__footer">(00) 1234 5678</span></a></li>
+                            <li><a href="#">We are open: Monday-Thursday: 9:00 AM - 5:30 PM</a></li>
+                            <li><a href="#">Friday: 9:00 AM - 6:00 PM</a></li>
+                            <li><a href="#">Saturday: 11:00 AM - 5:00 PM</a></li>
+                            <li><a href="#">E-mail: <span class="blue__numbers__footer">shop@email.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__socials">
+                    <ul class="footer__bottom__socials__list">
+                        <li class="footer__bottom__socials__list__item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="#fff" d="M16.816.504H1.184a.68.68 0 0 0-.68.68v15.632c0 .376.304.68.68.68h15.632c.375 0 .68-.304.68-.68V1.184a.68.68 0 0 0-.68-.68m-1.963 4.96h-1.357c-1.064 0-1.27.505-1.27 1.249V8.35h2.54l-.331 2.564h-2.21v6.582H9.578v-6.58H7.362V8.35h2.215V6.46c0-2.194 1.34-3.39 3.299-3.39.938 0 1.743.07 1.98.102v2.292z"/></svg></a></li>
+
+                        <li class="footer__bottom__socials__list__item"></a><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="#fff" d="M9 6.136A2.87 2.87 0 0 0 6.136 9 2.87 2.87 0 0 0 9 11.864 2.87 2.87 0 0 0 11.864 9 2.87 2.87 0 0 0 9 6.136M17.59 9c0-1.186.01-2.361-.056-3.545-.067-1.375-.38-2.595-1.386-3.6C15.14.846 13.922.534 12.547.468 11.36.402 10.186.413 9.002.413c-1.186 0-2.361-.011-3.545.056-1.375.066-2.595.38-3.6 1.385C.848 2.862.536 4.08.47 5.455.404 6.641.415 7.816.415 9s-.011 2.361.056 3.545c.066 1.375.38 2.595 1.385 3.6 1.008 1.008 2.226 1.32 3.601 1.387 1.186.066 2.361.055 3.545.055 1.186 0 2.361.011 3.545-.055 1.375-.067 2.595-.38 3.6-1.386 1.008-1.008 1.32-2.226 1.387-3.601.068-1.184.055-2.359.055-3.545M9 13.406A4.4 4.4 0 0 1 4.593 9 4.4 4.4 0 0 1 9 4.594 4.4 4.4 0 0 1 13.406 9 4.4 4.4 0 0 1 9 13.406m4.587-7.964a1.028 1.028 0 1 1 0-2.058 1.028 1.028 0 1 1 0 2.058"/></svg>
+                    </a></li>
+                    </ul>
+                </div>
+                <div class="footer__bottom__logos">
+                    <ul class="footer__bottom__logo__list">
+                        <li class="footer__bottom__logo__list__item"><a href="#"> <img src="assets/images/paypal.png" alt="пей пал"></a></li>
+                        <li class="footer__bottom__logo__list__item"><a href="#"> <img src="assets/images/visa.png" alt="виза"></a></li>
+                        <li class="footer__bottom__logo__list__item"><a href="#"> <img src="assets/images/maestro.png" alt="маэстро"></a></li>
+                        <li class="footer__bottom__logo__list__item"><a href="#"> <img src="assets/images/discover.png" alt="дискаве"></a></li>
+                        <li class="footer__bottom__logo__list__item"><a href="#"> <img src="assets/images/american-express.png" alt="американ экспресс"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__bottom__copyright">
+                    <p class="footer__bottom__text">Copyright &copy;  2020 Shop Pty. Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/modules/swiper.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

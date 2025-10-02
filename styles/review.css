@@ -1,0 +1,58 @@
+.review .container {
+  align-items: center;
+  justify-content: center;
+  min-width: 1160px;
+  padding: 49px 119px 56px 119px;
+  background-color: #F5F7FF;
+  position: relative;
+}
+
+.reviewSlider {
+  position: relative;
+}
+
+.reviewSlider .swiper-pagination {
+  width: fit-content;
+  position: absolute;
+  right: 119px;
+  bottom: 69px;
+}
+
+.reviewSlider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  position: relative;
+  gap: 21.5px;
+}
+.reviewSlider__item::before {
+  content: "";
+  width: 40px;
+  height: 20px;
+  background: url("../assets/icons/review-qwoll.svg") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.review__slide__text p {
+  font-size: 18px;
+  color: #000000;
+  padding-left: 95px;
+  text-align: left;
+}
+.review__slide__text p:nth-child(2) {
+  font-size: 14px;
+  text-align: end;
+}
+
+.review__button {
+  border-radius: 50px;
+  color: var(--button-blue);
+  border: 2px solid var(--button-blue);
+  padding: 8px 26px;
+  appearance: none;
+  background: transparent;
+}
